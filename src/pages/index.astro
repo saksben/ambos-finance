@@ -1,7 +1,578 @@
 ---
+import FAQ from "../components/FAQ";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  
+<Layout
+  title="Welcome to Astro."
+  description="Ambos finance is an application that lets you easily borrow USD against the value of your ETH holdings and withdraw to a fiat currency of your choice. Unlock the cash value of your ETH without selling. Live your life today, while your investments grow for tomorrow."
+>
+  <section class="flex flex-col justify-center items-center gap-20">
+    <section class="lg:bg-white my-4">
+      <div
+        class="xl:flex gap-4 lg:gap-20 lg:justify-center items-center py-16 px-4 lg:px-32 font-[DicSans]"
+      >
+        <div class="lg:text-left text-center">
+          <div
+            class="home-title text-center lg:text-4xl text-4xl xl:text-6xl font-bold tracking-wide mb-4 leading-10"
+          >
+            <p>Invest for tomorrow.</p>
+            <p>Live for today.</p>
+          </div>
+          <p
+            class="text-center fade-in lg:text-xl text-2xl xl:text-2xl mb-8 font-extralight"
+          >
+            Crypto Loans made easy, get case
+            <br />
+            without selling your crypto
+          </p>
+          <div
+            class="flex gap-2 justify-center lg:justify-start items-center flex-wrap"
+          >
+            <button
+              id="Button1"
+              class="fade-in bg-green-600 justify-center py-4 hover:bg-green-600/80 rounded-lg mt-4 w-52 lg:text-lg xl:text-2xl text-xl font-medium tracking-[0.5] leading-[24px] text-white mx-6"
+              >Sign Up</button
+            >
+            <button
+              class="fade-in bg-blue-600 justify-center py-4 rounded-lg mt-4 hover:bg-blue-600/80 w-52 lg:text-lg xl:text-2xl text-xl font-medium tracking-[0.5] leading-[24px] text-white mx-6"
+              >Go to Calculator</button
+            >
+          </div>
+        </div>
+        <div class="mt-6 lg:mt-0 mx-auto">
+          <div class="flex w-full justify-center items-center"></div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full mx-auto lg:transform lg:-translate-y-[25%] px-5 lg:-mb-36 flex flex-col justify-center items-center"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-5 px-10">
+        <div
+          class="order-1 lg:order-1 lg:col-span-2 w-full flex justify-start items-start lg:items-center lg:justify-end lg:transform lg:translate-y-1/4"
+        >
+          <div
+            class="w-[500px] lg:w-[400px] lg:pl-10 ml-5 mr-5 flex flex-col justify-center items-center lg:justify-center"
+          >
+            <div class="flex gap-5 justify-start items-start py-3">
+              <div class="pt-1.5">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    ><g clip-path="url(#clip0_1547_40)"
+                      ><path
+                        d="M5.84007 5.53329C5.71909 5.40439 5.55019 5.33127 5.37341 5.33127C5.19662 5.33127 5.02772 5.40439 4.90674 5.53329L4.20007 6.23996C4.07117 6.36094 3.99805 6.52985 3.99805 6.70663C3.99805 6.88341 4.07117 7.05232 4.20007 7.17329L6.74674 9.73329C2.97998 14.5094 3.3826 21.3485 7.68376 25.6496C11.9849 29.9508 18.8239 30.3534 23.6001 26.5866L26.1601 29.1333C26.2811 29.2622 26.45 29.3353 26.6267 29.3353C26.8035 29.3353 26.9724 29.2622 27.0934 29.1333L27.8001 28.4266C27.929 28.3056 28.0021 28.1367 28.0021 27.96C28.0021 27.7832 27.929 27.6143 27.8001 27.4933L5.84007 5.53329ZM16.0001 26.6666C10.8454 26.6666 6.66674 22.488 6.66674 17.3333C6.66688 15.2638 7.36178 13.2542 8.64007 11.6266L21.7067 24.6933C20.0792 25.9716 18.0696 26.6665 16.0001 26.6666ZM16.4267 7.99996C19.4784 8.13825 22.2692 9.76114 23.8987 12.345C25.5282 14.9288 25.7902 18.1466 24.6001 20.96L26.5867 22.9466C28.8229 18.7147 28.3304 13.5586 25.3334 9.82663L26.8401 8.31996C27.0942 8.06073 27.0942 7.64585 26.8401 7.38663L25.8934 6.43996C25.7682 6.31375 25.5978 6.24276 25.4201 6.24276C25.2423 6.24276 25.0719 6.31375 24.9467 6.43996L23.4667 7.99996C22.0647 6.86218 20.4239 6.05548 18.6667 5.63996V3.99996C18.6667 3.26358 18.0698 2.66663 17.3334 2.66663H14.6667C13.9304 2.66663 13.3334 3.26358 13.3334 3.99996V5.63996C12.3023 5.87675 11.307 6.24887 10.3734 6.74663L12.3601 8.73329C13.6438 8.18807 15.0334 7.93748 16.4267 7.99996ZM15.4934 10.6666C15.1704 10.6623 14.8928 10.8946 14.8401 11.2133L17.1734 13.5466V11.3333C17.1734 10.9651 16.8749 10.6666 16.5067 10.6666H15.4934Z"
+                        fill="#0F0F19"></path></g
+                    ><defs
+                      ><clipPath id="clip0_1547_40"
+                        ><rect width="32" height="32" fill="white"
+                        ></rect></clipPath
+                      ></defs
+                    ></svg
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col text-start gap-2 items-start justify-start tracking-widest"
+              >
+                <p class="text-lg text-blue-600 font-bold">
+                  No Fixed Time Limits
+                </p>
+                <p class="text-lg tracking-wider">
+                  Repay as you wish, just keep deposits above liquidation levels
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-5 justify-start items-start py-3">
+              <div class="pt-1.5">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    ><g clip-path="url(#clip0_1547_44)"
+                      ><path
+                        d="M26.8267 6.82671L22.12 2.12004C21.6189 1.61599 20.9374 1.33281 20.2267 1.33337H11.7733C11.0626 1.33281 10.3811 1.61599 9.88 2.12004L5.17333 6.82671C4.42297 7.57613 4.00093 8.59287 4 9.65337V17.4534C4.00247 20.7431 5.52276 23.8476 8.12 25.8667L13.56 30.1067C14.0291 30.4708 14.6062 30.6678 15.2 30.6667H16.8C17.3938 30.6678 17.9709 30.4708 18.44 30.1067L23.88 25.8667C26.4772 23.8476 27.9975 20.7431 28 17.4534V9.65337C27.9991 8.59287 27.577 7.57613 26.8267 6.82671ZM25.3333 17.4934C25.3439 19.9634 24.1996 22.2964 22.24 23.8L16.8 28H15.2L9.76 23.76C7.8004 22.2564 6.65608 19.9234 6.66667 17.4534V9.65337C6.66814 9.30359 6.80701 8.96839 7.05333 8.72004L11.7733 4.00004H20.2267L24.9467 8.72004C25.193 8.96839 25.3319 9.30359 25.3333 9.65337V17.4934ZM21.44 12.3467L17.9733 12.08L16.64 8.84004C16.5353 8.59421 16.2939 8.43465 16.0267 8.43465C15.7595 8.43465 15.5181 8.59421 15.4133 8.84004L14.08 12.08L10.6133 12.3467C10.3495 12.3767 10.1273 12.5574 10.0442 12.8095C9.96112 13.0617 10.0324 13.3391 10.2267 13.52L12.8933 15.7867L12 19.1734C11.9358 19.434 12.0342 19.7078 12.2496 19.8679C12.4651 20.0281 12.7556 20.0434 12.9867 19.9067L16 18.08L19 19.9067C19.2311 20.0434 19.5216 20.0281 19.737 19.8679C19.9525 19.7078 20.0509 19.434 19.9867 19.1734L19.1733 15.7867L21.84 13.52C22.0352 13.3373 22.1052 13.0572 22.0189 12.8042C21.9326 12.5512 21.7061 12.3722 21.44 12.3467Z"
+                        fill="#0F0F19"></path></g
+                    ><defs
+                      ><clipPath id="clip0_1547_44"
+                        ><rect width="32" height="32" fill="white"
+                        ></rect></clipPath
+                      ></defs
+                    ></svg
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col text-start gap-2 items-start justify-start tracking-widest"
+              >
+                <p class="text-lg text-blue-600 font-bold">
+                  No Fixed Time Limits
+                </p>
+                <p class="text-lg tracking-wider">
+                  Repay as you wish, just keep deposits above liquidation levels
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-3 lg:order-2 flex justify-center items-end relative">
+          <img
+            src="/src/assets/img/phone.png"
+            alt="Phone"
+            class="transform translate-y-1/3 h-[500px] lg:h-[600px]"
+          />
+        </div>
+        <div
+          class="order-2 lg:order-3 lg:col-span-2 w-full flex justify-start items-start lg:items-center lg:justify-start lg:transform lg:translate-y-1/4"
+        >
+          <div
+            class="lg:w-[400px] lg:pl-10 ml-5 mr-5 flex flex-col justify-center items-center lg:justify-center"
+          >
+            <div class="flex gap-5 justify-start items-start py-3">
+              <div class="pt-1.5">
+                <div slot="svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    ><g clip-path="url(#clip0_1547_52)"
+                      ><path
+                        d="M25.3333 9.33333H8C7.26362 9.33333 6.66667 8.73638 6.66667 8C6.66667 7.26362 7.26362 6.66667 8 6.66667H25.3333C25.3333 5.19391 24.1394 4 22.6667 4H8C5.79086 4 4 5.79086 4 8V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V12C28 10.5272 26.8061 9.33333 25.3333 9.33333ZM6.66667 25.3333V12H25.3333V14.6667H16C15.2636 14.6667 14.6667 15.2636 14.6667 16V21.3333C14.6667 22.0697 15.2636 22.6667 16 22.6667H25.3333V25.3333H6.66667ZM20 18V19.3333C20 19.7015 19.7015 20 19.3333 20H18C17.6318 20 17.3333 19.7015 17.3333 19.3333V18C17.3333 17.6318 17.6318 17.3333 18 17.3333H19.3333C19.7015 17.3333 20 17.6318 20 18Z"
+                        fill="#0F0F19"></path></g
+                    ><defs
+                      ><clipPath id="clip0_1547_52"
+                        ><rect width="32" height="32" fill="white"
+                        ></rect></clipPath
+                      ></defs
+                    ></svg
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col text-start gap-2 items-start justify-start tracking-widest"
+              >
+                <p class="text-lg text-blue-600 font-bold">Your Money</p>
+                <p class="text-lg tracking-wider">
+                  Funds are untouched; access granted only with your nod via
+                  Ambos
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-5 justify-start items-start py-3">
+              <div class="pt-1.5">
+                <div slot="svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    ><g clip-path="url(#clip0_1547_48)"
+                      ><path
+                        d="M32 9.33329V19.3733C32.0045 20.3866 31.5422 21.3456 30.7467 21.9733L25.8267 25.9733C25.517 26.2245 25.336 26.6012 25.3334 27V28C25.3334 28.7363 24.7364 29.3333 24 29.3333H18.6667C17.9303 29.3333 17.3334 28.7363 17.3334 28V24.0666C17.3355 22.6618 18.0744 21.3611 19.28 20.64L26.3467 16.4C26.6468 16.2139 26.9936 16.1168 27.3467 16.12C27.5692 16.1151 27.7906 16.1513 28 16.2266C28.4519 16.3701 28.836 16.6735 29.08 17.08C29.3543 17.5343 29.4368 18.079 29.3092 18.5942C29.1817 19.1094 28.8546 19.5527 28.4 19.8266L23.6 22.6666C23.4521 22.7637 23.3434 22.9102 23.2934 23.08C23.2239 23.3446 23.3233 23.6249 23.544 23.7867C23.7646 23.9485 24.0618 23.9591 24.2934 23.8133L29.08 20.9333C29.8591 20.504 30.4314 19.7778 30.6667 18.92C30.9805 17.5961 30.4514 16.2152 29.3334 15.44V9.33329C29.3334 8.59691 29.9303 7.99996 30.6667 7.99996C31.4031 7.99996 32 8.59691 32 9.33329ZM12.72 20.64L5.65337 16.4C5.35323 16.2139 5.00647 16.1168 4.65337 16.12C4.43089 16.1151 4.20942 16.1513 4.00003 16.2266C3.54813 16.3701 3.1641 16.6735 2.92003 17.08C2.64575 17.5343 2.56331 18.079 2.69085 18.5942C2.81839 19.1094 3.14546 19.5527 3.60003 19.8266L8.40003 22.6666C8.54801 22.7637 8.65669 22.9102 8.7067 23.08C8.77612 23.3446 8.67675 23.6249 8.45609 23.7867C8.23542 23.9485 7.93828 23.9591 7.7067 23.8133L2.92003 20.9733C2.15772 20.5212 1.60978 19.781 1.40003 18.92C1.17197 18.0644 1.30704 17.1526 1.77337 16.4C1.99825 16.0155 2.30286 15.6836 2.6667 15.4266V9.33329C2.6667 8.59691 2.06975 7.99996 1.33337 7.99996C0.596986 7.99996 3.22009e-05 8.59691 3.22009e-05 9.33329V19.3866C-0.00444335 20.4 0.457832 21.3589 1.25337 21.9866L6.17337 25.9866C6.46247 26.2197 6.64126 26.5628 6.6667 26.9333V28C6.6667 28.7363 7.26365 29.3333 8.00003 29.3333H13.3334C14.0697 29.3333 14.6667 28.7363 14.6667 28V24.0666C14.6646 22.6618 13.9256 21.3611 12.72 20.64ZM16 5.33329C13.7909 5.33329 12 7.12415 12 9.33329C12 11.5424 13.7909 13.3333 16 13.3333C18.2092 13.3333 20 11.5424 20 9.33329C20 7.12415 18.2092 5.33329 16 5.33329ZM16 2.66663C19.6819 2.66663 22.6667 5.65139 22.6667 9.33329C22.6667 13.0152 19.6819 16 16 16C12.3181 16 9.33337 13.0152 9.33337 9.33329C9.33337 5.65139 12.3181 2.66663 16 2.66663ZM27.52 14.8H28.0134V10.3333L27.8134 9.98663C27.4432 9.3645 26.6442 9.15144 26.0134 9.50663C25.3912 9.87682 25.1782 10.6758 25.5334 11.3066L27.52 14.8ZM6.5067 11.32C6.86189 10.6891 6.64883 9.89016 6.0267 9.51996C5.39588 9.16477 4.5969 9.37783 4.2267 9.99996L4.00003 10.3333V14.8533H4.49337L6.5067 11.32Z"
+                        fill="#0F0F19"></path></g
+                    ><defs
+                      ><clipPath id="clip0_1547_48"
+                        ><rect width="32" height="32" fill="white"
+                        ></rect></clipPath
+                      ></defs
+                    ></svg
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col text-start gap-2 items-start justify-start tracking-widest"
+              >
+                <p class="text-lg text-blue-600 font-bold">
+                  No Debt Collectors
+                </p>
+                <p class="text-lg tracking-wider">
+                  No repayment demands; surplus ETH ensures protection from
+                  falls.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full z-10 max-w-[1250px] mx-auto tracking-wider flex flex-col items-center text-center justify-center gap-5 bg-black text-white relative min-h-[400px] px-5 lg:px-10 rounded-2xl overflow-hidden"
+      >
+        <div
+          class="h-full w-96 absolute transform translate-x-1/3 right-0 z-0 lg:block"
+        >
+          <img
+            src="/src/assets/img/right-circle.png"
+            alt="Right Decorative Circle"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+        <div class="h-full w-96 absolute transform -translate-x-1/3 left-0 z-0">
+          <img
+            src="/src/assets/img/left-circle.png"
+            alt="Left Decorative Circle"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="49"
+          height="49"
+          viewBox="0 0 49 49"
+          fill="none"
+          ><path
+            d="M42.8752 8.16663H32.4422C29.5995 8.21194 26.8052 8.9105 24.2756 10.2083L23.0097 10.8412C21.0004 11.8131 18.7896 12.2958 16.5581 12.25H6.12516C5.58368 12.25 5.06437 12.4651 4.68149 12.8479C4.2986 13.2308 4.0835 13.7501 4.0835 14.2916V38.7916C4.0835 39.3331 4.2986 39.8524 4.68149 40.2353C5.06437 40.6182 5.58368 40.8333 6.12516 40.8333H16.5581C19.3928 40.8197 22.1866 40.1561 24.7247 38.8937L25.9906 38.2608C27.9912 37.2536 30.2024 36.7358 32.4422 36.75H42.8752C43.4166 36.75 43.936 36.5349 44.3188 36.152C44.7017 35.7691 44.9168 35.2498 44.9168 34.7083V10.2083C44.9168 9.66681 44.7017 9.1475 44.3188 8.76462C43.936 8.38173 43.4166 8.16663 42.8752 8.16663ZM40.8335 26.5416C39.209 26.5416 37.6511 27.1869 36.5025 28.3356C35.3538 29.4843 34.7085 31.0422 34.7085 32.6666H32.4422C29.6078 32.6824 26.8144 33.3458 24.2756 34.6062L23.0097 35.2391C21.0057 36.2369 18.7968 36.7542 16.5581 36.75H14.2918C14.2918 35.1255 13.6465 33.5676 12.4979 32.4189C11.3492 31.2703 9.79128 30.625 8.16683 30.625V22.4583C9.79128 22.4583 11.3492 21.813 12.4979 20.6643C13.6465 19.5157 14.2918 17.9577 14.2918 16.3333H16.5581C19.4006 16.2858 22.1943 15.5874 24.7247 14.2916L25.9906 13.6587C28.0031 12.6962 30.2116 12.214 32.4422 12.25H34.7085C34.7085 13.8744 35.3538 15.4323 36.5025 16.581C37.6511 17.7296 39.209 18.375 40.8335 18.375V26.5416ZM30.6252 24.5C30.6252 25.7114 30.2659 26.8956 29.5929 27.9028C28.9199 28.9101 27.9633 29.6951 26.8441 30.1587C25.7249 30.6223 24.4934 30.7436 23.3052 30.5073C22.1171 30.2709 21.0257 29.6876 20.1691 28.831C19.3125 27.9744 18.7292 26.883 18.4929 25.6949C18.2565 24.5068 18.3778 23.2752 18.8414 22.156C19.305 21.0368 20.09 20.0802 21.0973 19.4072C22.1045 18.7342 23.2888 18.375 24.5002 18.375C26.1246 18.375 27.6825 19.0203 28.8312 20.1689C29.9799 21.3176 30.6252 22.8755 30.6252 24.5Z"
+            fill="#3B7DFC"></path></svg
+        >
+        <p class="text-2xl font-bold">
+          Borrow With Confidence,
+          <span class="text-blue-600">Grow For Tomorrow</span>
+        </p>
+        <p class="text-center max-w-[600px]">
+          Ambos Finance is a cutting-edge application designed to empower you.
+          Seamlessly borrow USD against the robust value of your ETH holdings
+          and access your preferred fiat currency without a hitch.
+        </p>
+        <button class="bg-green-600 text-lg rounded-lg px-5 py-3 my-3 z-20"
+          >Sign Up</button
+        >
+      </div>
+    </section>
+    <div
+      class="flex flex-col lg:flex-row gap-10 justify-center items-center bg-white font-[DicSans] tracking-widest lg:px-36 mx-12"
+    >
+      <div class="lg:order-2">
+        <img src="/src/assets/img/dollar.svg" alt="boy" class="w-full h-auto" />
+      </div>
+      <div class="lg:w-[500px] flex flex-col items-start justify-center gap-10">
+        <div class="flex gap-5 justify-start items-start py-3">
+          <div class="pt-1.5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="49"
+                height="49"
+                viewBox="0 0 49 49"
+                fill="none"
+                ><g clip-path="url(#clip0_1547_32)"
+                  ><path
+                    d="M36.934 20.8658L22.6423 44.1817C22.3618 44.6348 21.8685 44.9123 21.3356 44.9167H20.9273C20.6413 44.9161 20.3681 44.798 20.1719 44.59C19.9766 44.3812 19.88 44.0988 19.9065 43.8142L21.0498 30.625H13.761C13.2127 30.6191 12.7081 30.3241 12.434 29.8492L12.046 29.1754C11.8512 28.8557 11.8512 28.4539 12.046 28.1342L26.3377 4.81832C26.6258 4.35276 27.1378 4.07345 27.6852 4.08332H28.0935C28.3795 4.08385 28.6527 4.20198 28.849 4.40999C29.0442 4.6188 29.1408 4.90117 29.1144 5.18582L27.9506 18.375H35.2394C35.7878 18.3809 36.2923 18.6759 36.5665 19.1508L36.9544 19.8246C37.143 20.1481 37.1351 20.5499 36.934 20.8658Z"
+                    fill="#3B7DFC"></path></g
+                ><defs
+                  ><clipPath id="clip0_1547_32"
+                    ><rect width="49" height="49" fill="white"></rect></clipPath
+                  ></defs
+                ></svg
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-start gap-2 items-start justify-start tracking-widest"
+          >
+            <p class="text-2xl text-blue-600 font-bold">Simple & Fast</p>
+            <p class="text-xl tracking-wider">
+              Until now, Decentralised Finance (DeFi) has been too complicated
+              for anyone not deeply involved in the space to use.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-5 justify-start items-start py-3">
+          <div class="pt-1.5">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="49"
+                height="49"
+                viewBox="0 0 49 49"
+                fill="none"
+                ><g clip-path="url(#clip0_1547_36)"
+                  ><path
+                    d="M44.3891 21.3354L44.0015 20.9271C43.7077 20.606 43.2941 20.4212 42.8591 20.4167H42.0636C39.2668 20.4184 36.4965 20.9591 33.904 22.0092C33.765 15.3784 30.9461 9.08734 26.0913 4.57336C25.7488 4.25264 25.2955 4.07704 24.8265 4.08336H24.1738C23.7048 4.07704 23.2516 4.25264 22.909 4.57336C18.0542 9.08734 15.2353 15.3784 15.0963 22.0092C12.5038 20.9591 9.7335 20.4184 6.93674 20.4167H6.14118C5.71639 20.4214 5.31163 20.5982 5.01925 20.9067L4.63167 21.315C4.29463 21.5989 4.10044 22.0175 4.1013 22.4584C3.62638 34.266 12.7111 44.2679 24.5002 44.9167C36.2892 44.2679 45.3739 34.266 44.899 22.4584C44.899 22.0279 44.7131 21.6185 44.3891 21.3354ZM19.1557 22.4584C19.1492 17.381 21.0579 12.4883 24.5002 8.75877C27.9424 12.4883 29.8512 17.381 29.8447 22.4584C29.8447 23.0709 29.8447 23.6629 29.8447 24.255C28.7372 24.9887 27.6993 25.8225 26.744 26.7459C25.9289 27.586 25.1788 28.4869 24.5002 29.4409C23.8215 28.4869 23.0714 27.586 22.2563 26.7459C21.3268 25.8264 20.3164 24.9927 19.2373 24.255C19.1965 23.6629 19.1557 23.0709 19.1557 22.4584ZM35.6991 35.7292C32.7033 38.7266 28.726 40.5393 24.5002 40.8334C15.7405 40.2493 8.76464 33.2674 8.18107 24.5C12.3949 24.7946 16.3591 26.608 19.3392 29.6042C20.0009 30.2834 20.608 31.0139 21.1547 31.7888L22.6031 33.8304C22.9839 34.3658 23.5988 34.6849 24.2554 34.6879H24.6634C25.3199 34.6849 25.9349 34.3658 26.3157 33.8304L27.764 31.7888C28.3108 31.0139 28.9178 30.2834 29.5795 29.6042C32.5803 26.59 36.5768 24.7752 40.8193 24.5C40.5266 28.7399 38.7074 32.7297 35.6991 35.7292Z"
+                    fill="#3B7DFC"></path></g
+                ><defs
+                  ><clipPath id="clip0_1547_36"
+                    ><rect width="49" height="49" fill="white"></rect></clipPath
+                  ></defs
+                ></svg
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-start gap-2 items-start justify-start tracking-widest"
+          >
+            <p class="text-2xl text-blue-600 font-bold">Ease of Use</p>
+            <p class="text-xl tracking-wider">
+              We want to change that. We stripped out all the hassle and
+              complexity of crypto to make borrowing as easy as possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="how-section">
+      <div class="flex justify-center items-center mt-20 font-[DicSans]">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-stretch"
+        >
+          <div
+            class="flex flex-col lg:w-[333px] mx-4 sm:mx-12 p-4 rounded-[20px] bg-white shadow-md justify-between lg:justify-self-end"
+          >
+            <h1
+              class="text-2xl font-bold text-blue-600 text-center leading-[40px] tracking-[2.4px]"
+            >
+              Simple
+            </h1>
+            <p
+              class="mt-2 text-bg_black text-center font-normal text-xl leading-[27px] tracking-[1.8px]"
+            >
+              No private keys required - use your favourite social account or a
+              simple email &amp; password login.
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:w-[333px] mx-4 sm:mx-12 p-4 rounded-[20px] bg-white shadow-md justify-between lg:justify-self-end"
+          >
+            <h1
+              class="text-2xl font-bold text-blue-600 text-center leading-[40px] tracking-[2.4px]"
+            >
+              Streamlined
+            </h1>
+            <p
+              class="mt-2 text-bg_black text-center font-normal text-xl leading-[27px] tracking-[1.8px]"
+            >
+              Borrow in just a few clicks, then buy and sell directly within our
+              application or send to any other address you like.
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:w-[333px] mx-4 sm:mx-12 p-4 rounded-[20px] bg-white shadow-md justify-between lg:justify-self-end"
+          >
+            <h1
+              class="text-2xl font-bold text-blue-600 text-center leading-[40px] tracking-[2.4px]"
+            >
+              Secured
+            </h1>
+            <p
+              class="mt-2 text-bg_black text-center font-normal text-xl leading-[27px] tracking-[1.8px]"
+            >
+              Two-factor authentication gives you extra security against
+              attackers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden lg:block mx-auto w-[1166px] h-[1166px] flex-shrink-0 p-4 rounded-full bg-white -mt-48 font-[DicSans]"
+      >
+      </div>
+      <img
+        src="/src/assets/img/diamond.svg"
+        alt="Your Image"
+        class="block mx-auto mt-12 lg:-mt-[900px] h-[434px] px-78 lg:px-84.94 items-center flex-shrink-0"
+      />
+      <img
+        src="/src/assets/img/fingerprint.svg"
+        alt="Your Image"
+        class="block mx-auto -mt-64 lg:-mt-[260px] h-[116px] px-78 lg:px-84.94 items-center flex-shrink-0"
+      />
+      <div class="text-center mt-4">
+        <h2
+          class="text-3xl mx-12 font-bold text-black leading-[40px] tracking-[3.2px]"
+        >
+          Unlock Your Ethereum's Potential.
+        </h2>
+      </div>
+      <div class="text-center mt-4 font-[DicSans]">
+        <h2
+          class="text-2xl mx-12 font-bold text-black leading-[29px] tracking-[2px]"
+        >
+          Don't sell.
+        </h2>
+        <p
+          class="mt-2 text-black font-normal text-center mx-12 text-xl leading-[29px] tracking-[2px]"
+        >
+          Instead, tap into the cash value of your ETH holdings.<br /> Enjoy the
+          present and let your investments pave the<br /> way for a brighter future.
+        </p>
+      </div>
+      <div
+        class="flex justify-center mt-20 lg:space-x-24 flex-col lg:flex-row font-[DicSans]"
+      >
+        <div
+          class="flex flex-col lg:w-[333px] p-4 rounded-[20px] bg-black shadow-md mb-16 lg:mb-0 mx-6 lg:mx-0 justify-between"
+        >
+          <img
+            src="/src/assets/img/one.svg"
+            alt="Image 1"
+            class="width-[71px] height-[64.319px] mx-auto mb-2 -mt-12"
+          />
+          <h3
+            class="text-2xl font-bold text-blue-600 text-center leading-[40px] tracking-[2.4px]"
+          >
+            Deposit ETH
+          </h3>
+          <p
+            class="text-white text-center font-normal text-xl leading-[27px] tracking-[1.8px]"
+          >
+            Use Ambos: Deposit ETH via our user-friendly, non-custodial
+            platform.
+          </p>
+        </div>
+        <div
+          class="flex flex-col lg:w-[333px] p-4 rounded-[20px] bg-black shadow-md mx-12 mb-16 lg:mb-0 lg:ml-[24px] mx-6 lg:mx-0 justify-between"
+        >
+          <img
+            src="/src/assets/img/two.svg"
+            alt="Image 2"
+            class="width-[71px] height-[64.319px] mx-auto mb-2 -mt-12"
+          />
+          <h3
+            class="text-2xl font-bold text-blue-600 text-center leading-[40px] tracking-[2.4px]"
+          >
+            Borrow USD
+          </h3>
+          <p
+            class="text-white text-center font-normal text-xl leading-[27px] tracking-[1.8px]"
+          >
+            Borrow up to 50% of ETH value in stablecoins or your desired fiat
+            currency.
+          </p>
+        </div>
+        <div
+          class="flex flex-col lg:w-[333px] p-4 rounded-[20px] bg-black shadow-md mx-12 lg:mb-0 lg:ml-[24px] mx-6 lg:mx-0 justify-between"
+        >
+          <img
+            src="/src/assets/img/three.svg"
+            alt="Image 3"
+            class="width-[71px] height-[64.319px] mx-auto mb-2 -mt-12"
+          />
+          <h3
+            class="text-2xl font-bold text-blue-600 text-center leading-[40px] tracking-[2.4px]"
+          >
+            Repay When You Want
+          </h3>
+          <p
+            class="text-white text-center font-normal text-xl leading-[27px] tracking-[1.8px]"
+          >
+            Repay the loan + interest anytime, retaining your full investment
+            value.*
+          </p>
+        </div>
+      </div>
+      <p
+        class="leading-[27px] tracking-[1.8px] font-normal mx-12 text-lg text-center py-10 text-[#83839D] font-[DicSans]"
+      >
+        *Subject to minimum deposit balances and liquidations
+      </p>
+      <button
+        id="Button1"
+        class="bg-green-600 px-4 flex flex-col justify-center h-16 items-center rounded-lg mx-auto hover:opacity-80 mb-10 text-2xl font-medium tracking-[0.5] leading-[24px] text-white"
+        >Sign Up</button
+      >
+    </section>
+    <section id="team" class="py-12 px-4">
+      <h2 class="text-4xl font-semibold text-center mb-8 font-[DicSans]">
+        Leadership Team
+      </h2>
+      <div class="flex flex-wrap justify-center">
+        <div class="m-4 p-6 bg-white rounded-lg shadow-md w-64 font-[DicSans]">
+          <img
+            src="/src/assets/img/jordan.jpg"
+            alt="Jordan Imran"
+            class="w-32 h-32 mx-auto rounded-full mb-4"
+          />
+          <h3 class="text-blue-600 text-xl font-medium mb-2">Jordan Imran</h3>
+          <p class="text-gray-600 mb-4">Development</p>
+          <a href="" class="text-blue-600 hover:underline">Twitter</a>
+          <span class="mx-2">|</span><a
+            href=""
+            class="text-blue-600 hover:underline">Website</a
+          >
+        </div><div
+          class="m-4 p-6 bg-white rounded-lg shadow-md w-64 font-[DicSans]"
+        >
+          <img
+            src="/src/assets/img/zag.png"
+            alt="Zag Asghar"
+            class="w-32 h-32 mx-auto rounded-full mb-4"
+          />
+          <h3 class="text-blue-600 text-xl font-medium mb-2">Zag Asghar</h3>
+          <p class="text-gray-600 mb-4">Partnerships</p>
+          <a href="" class="text-blue-600 hover:underline">LinkedIn</a>
+        </div><div
+          class="m-4 p-6 bg-white rounded-lg shadow-md w-64 font-[DicSans]"
+        >
+          <img
+            src="/src/assets/img/vinz.jpg"
+            alt="Vincenzo Romeo"
+            class="w-32 h-32 mx-auto rounded-full mb-4"
+          />
+          <h3 class="text-blue-600 text-xl font-medium mb-2">Vincenzo Romeo</h3>
+          <p class="text-gray-600 mb-4">Design</p>
+          <a href="" class="text-blue-600 hover:underline">LinkedIn</a>
+          <span class="mx-2">|</span><a
+            href=""
+            class="text-blue-600 hover:underline">Website</a
+          >
+        </div><div
+          class="m-4 p-6 bg-white rounded-lg shadow-md w-64 font-[DicSans]"
+        >
+          <img
+            src="/src/assets/img/davide.jpg"
+            alt="Davide Spinelli"
+            class="w-32 h-32 mx-auto rounded-full mb-4"
+          />
+          <h3 class="text-blue-600 text-xl font-medium mb-2">
+            Davide Spinelli
+          </h3>
+          <p class="text-gray-600 mb-4">Marketing</p>
+          <a href="" class="text-blue-600 hover:underline">Twitter</a>
+        </div>
+      </div>
+    </section>
+    <FAQ client:load />
+  </section>
+  <div
+    class="flex justify-center space-x-4 md:space-x-2 lg:space-x-6 mb-16"
+  >
+    <a
+      href=""
+      rel="noopener noreferrer"
+      class="w-7 h-7 sm:w-6 sm:h-6"
+      ><img
+        src="/src/assets/img/twitter-icon.svg"
+        alt="Twitter"
+        class="w-full h-auto"
+      /></a
+    >
+    <a
+      href=""
+      rel="noopener noreferrer"
+      class="w-7 h-7 sm:w-6 sm:h-6"
+      ><img
+        src="/src/assets/img/linkedin-icon.svg"
+        alt="LinkedIn"
+        class="w-full h-auto"
+      /></a
+    >
+    <a
+      href=""
+      rel="noopener noreferrer"
+      class="w-7 h-7 sm:w-6 sm:h-6"
+      ><img
+        src="/src/assets/img/email-icon.svg"
+        alt="Email"
+        class="w-full h-auto"
+      /></a>
+  </div>
 </Layout>

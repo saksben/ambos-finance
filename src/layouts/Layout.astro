@@ -1,23 +1,52 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.jsx"
+
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>
+      {
+        Astro.url.pathname === "/"
+          ? `${title}
+        |
+        Ambos Finance
+        |
+        Dubai Silicon Oasis
+        `
+          : `${title}
+          |
+          Ambos Finance`
+      }
+    </title>
   </head>
   <body>
-    <slot />
+    <!--Screen reader skip main nav-->
+    <a
+      class="opacity-0 absolute top-0 left-0 -z-50"
+      aria-label="skip to main content"
+      href="#main">Click To Skip To Main Content</a
+    >
+    <Header client:load />
+    <main class="h-full overflow-hidden">
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
 <style is:global>
@@ -34,7 +63,6 @@ const { title } = Astro.props;
   }
   html {
     font-family: system-ui, sans-serif;
-    background: #13151a;
   }
   code {
     font-family:
